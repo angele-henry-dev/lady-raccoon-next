@@ -9,7 +9,7 @@ interface BackgroundRetroProps {
 }
 
 export default function BackgroundRetro({ play = false }: BackgroundRetroProps) {
-  const retroLinesRef = useRef<HTMLDivElement | null>(null);
+    const retroLinesRef = useRef<HTMLDivElement>(null!);
   const [isVisible, setIsVisible] = useState(false);
   const { width } = useWindowSize();
   const { docX: mouseX } = useMouse(retroLinesRef);
