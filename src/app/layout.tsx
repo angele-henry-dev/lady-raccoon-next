@@ -23,7 +23,7 @@ export default function RootLayout({
             </ul> */}
           </nav>
         </header>
-        <main className="flex-grow p-8">{children}</main>
+        <main className="flex-grow">{children}</main>
         <footer className="py-4 text-center">
           © {new Date().getFullYear()} Lady Raccoon
         </footer>

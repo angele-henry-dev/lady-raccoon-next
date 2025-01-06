@@ -1,4 +1,5 @@
 import BackgroundStars from "@/components/BackgroundStars";
+import BackgroundRetro from "@/components/BackgroundRetro";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
           to boost your project?
         </h1>
       </div>
+
+      <BackgroundRetro />
     </section>
   );
 }
