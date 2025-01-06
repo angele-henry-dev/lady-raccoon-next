@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center text-center">
       <BackgroundStars />
-      <div id="description">
+      <div id="description" className='my-20'>
         <h1>
           Looking for a
           <span className="main-title-container flex flex-row justify-center gap-3 highlight">
