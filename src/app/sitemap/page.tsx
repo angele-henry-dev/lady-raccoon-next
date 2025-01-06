@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 // Types
@@ -65,28 +66,28 @@ export default function SitemapPage() {
 
   return (
     <main className="inBetween">
-      <h1 className="mb-12 text-center text-3xl font-bold">Sitemap</h1>
+      <h1 className="mb-12 text-3xl font-bold text-center">Sitemap</h1>
       <div id="sitemap-container">
         <ul>
           {urlsSitemap.map((item, i) => (
             <li key={i}>
-              <a href={item.url} target="_self">
+              <Link href={item.url} target="_self">
                 {item.title}
-              </a>
+              </Link>
               {item.children.length > 0 && (
                 <ul>
                   {item.children.map((child, j) => (
                     <li key={j}>
-                      <a href={child.url} target="_self">
+                      <Link href={child.url} target="_self">
                         {child.title}
-                      </a>
+                      </Link>
                       {child.children.length > 0 && (
                         <ul>
                           {child.children.map((childBis, k) => (
                             <li key={k}>
-                              <a href={childBis.url} target="_self">
+                              <Link href={childBis.url} target="_self">
                                 {childBis.title}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
