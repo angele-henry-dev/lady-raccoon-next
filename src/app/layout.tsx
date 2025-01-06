@@ -13,8 +13,8 @@ export default function RootLayout({
     <html lang="fr">
       <body className="min-h-screen flex flex-col">
 
-        <header className="py-4">
-          <nav className="container mx-auto flex justify-between">
+        <header className="p-4">
+          <nav className="container flex justify-between">
             <Link href="/" className="font-bold text-xl flex items-center gap-2">
               <Image src="/images/logo.webp" alt="Logo" width={50} height={50} />
               <span className="truncate">Lady Raccoon</span>
