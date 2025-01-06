@@ -1,8 +1,8 @@
 import './globals.css';
 import Link from "next/link";
 import Image from 'next/image';
-import Github from '../../public/svg/Github';
-import LinkedIn from '../../public/svg/LinkedIn';
+import Github from '@/components/Github';
+import LinkedIn from '@/components/LinkedIn';
 
 export default function RootLayout({
   children,
@@ -20,7 +20,6 @@ export default function RootLayout({
               <span className="truncate">Lady Raccoon</span>
             </Link>
             {/* <ul className="flex gap-4">
-              <li><Link href="/">Accueil</Link></li>
               <li><Link href="/about">À propos</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul> */}
