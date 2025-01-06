@@ -1,5 +1,6 @@
 import BackgroundStars from "@/components/animations/BackgroundStars";
 import BackgroundRetro from "@/components/animations/BackgroundRetro";
+import SkillsGrid from "@/components/SkillsGrid";
 
 export default function Home() {
   return (
@@ -27,19 +28,20 @@ export default function Home() {
 
       <div id="skills" className='w-screen p-10'>
         <h2>
-        🎖 Skills at your service
+        Skills at your service
         </h2>
+        <SkillsGrid />
       </div>
 
       <div id="experience" className='w-screen p-10'>
         <h2>
-        🗂 Professional experience
+        Professional experience
         </h2>
       </div>
 
       <div id="projects" className='w-screen p-10'>
         <h2>
-        🎲 Projects
+        Projects
         </h2>
       </div>
     </section>
