@@ -16,11 +16,11 @@ export default function RootLayout({
               <Image src="/images/logo.webp" alt="Logo" width={50} height={50} />
               <span className="truncate">Lady Raccoon</span>
             </Link>
-            <ul className="flex gap-4">
+            {/* <ul className="flex gap-4">
               <li><Link href="/">Accueil</Link></li>
               <li><Link href="/about">À propos</Link></li>
               <li><Link href="/contact">Contact</Link></li>
-            </ul>
+            </ul> */}
           </nav>
         </header>
         <main className="flex-grow p-8">{children}</main>

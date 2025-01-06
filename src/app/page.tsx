@@ -1,6 +1,9 @@
+import BackgroundStars from "@/components/BackgroundStars";
+
 export default function Home() {
   return (
     <section className="flex flex-col items-center text-center">
+      <BackgroundStars />
       <div id="description">
         <h1>
           Looking for a
