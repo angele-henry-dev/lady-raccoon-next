@@ -1,0 +1,115 @@
+[
+  {
+    "what": "Software engineer",
+    "where": "Alten as a Freelance",
+    "from": 2023,
+    "to": 2024,
+    "descriptions": [
+      "I implemented all the necessary measures to improve the team's development methods.",
+      "My role also included supporting junior developers.",
+      "I had the opportunity to familiarize myself with the Skywise platform by Palantir and Apache's PySpark technology."
+    ],
+    "technologies": ["Foundry", "Python", "PySpark", "SQL", "Javascript", "ui/ux", "Mentorat"],
+    "position": "bottom: 30px; left: 20px;",
+    "building": "brickbuilding"
+  },
+  {
+    "what": "IoT Developer",
+    "where": "Airbus",
+    "from": 2018,
+    "to": 2023,
+    "descriptions": [
+      "Design and development of a platform in Python and VueJS using AWS services to allow the management of many connected objects.",
+      "Management of the frontend part (reviews of code, migrations, upgrades, ui/ux)."
+    ],
+    "technologies": [
+      "Python",
+      "Flask",
+      "VueJS",
+      "Vuetify",
+      "JavaScript",
+      "Typescript",
+      "AWS",
+      "Tailwind",
+      "ui/ux"
+    ],
+    "position": "top: 125px; left: 20px;",
+    "building": "brickbuilding"
+  },
+  {
+    "what": "Software Engineer",
+    "where": "Activus Services",
+    "from": 2017,
+    "to": 2018,
+    "descriptions": [
+      "Develop and manage a platform for airplane companies to follow the evolution of multiple systems to detect dangerous or alerting trends.",
+      "Development of a ServiceNow portal for the management of the various ITSM processes."
+    ],
+    "technologies": ["Java", "ui/ux", "Javascript", "ServiceNow"],
+    "position": "top: 5px; left: 120px;",
+    "building": "brickbuilding"
+  },
+  {
+    "what": "Analyst developer",
+    "where": "Koncept and Activus Services",
+    "from": 2015,
+    "to": 2017,
+    "descriptions": [
+      "Design and development of a portal with Liferay in Java EE for the creation/handling of incidents.",
+      "Implementation and management of a decision tree with RedHat BRMS.",
+      "Many POCs."
+    ],
+    "technologies": [
+      "Liferay",
+      "Java",
+      "Hibernate",
+      "ui/ux",
+      "Javascript",
+      "JQuery",
+      "BRMS RedHat",
+      "BMC Remedy",
+      "C++",
+      "Arduino",
+      "Google Dialogflow"
+    ],
+    "position": "top: 95px; right: 123px;",
+    "building": "brickbuilding"
+  },
+  {
+    "what": "Software developer",
+    "where": "Libre-Services",
+    "from": 2015,
+    "descriptions": [
+      "Design and development of patients files management and 3D image manipulation software for medical sector."
+    ],
+    "technologies": ["C++", "QT5", "MySQL", "PHPMyAdmin", "PHP", "ui/ux"],
+    "position": "bottom: 100px; right: 125px;",
+    "building": "brickhouse"
+  },
+  {
+    "what": "Software developer training",
+    "where": "LDNR",
+    "from": 2014,
+    "to": 2015,
+    "descriptions": [
+      "I realized five development projects with the different languages C, C++ and Java SE/2EE on a distant collaborative work."
+    ],
+    "technologies": ["C", "C++", "Java"],
+    "position": "bottom: 15px; right: 60px;",
+    "building": "brickbuilding"
+  },
+  {
+    "what": "Sound technician",
+    "where": "Radio Occitania",
+    "from": 2011,
+    "to": 2014,
+    "descriptions": [
+      "Implementation of a website with live broadcast of radio programs.",
+      "Installation and management of a radio automation software.",
+      "Realization of radio broadcasts as a radio animator and as a sound technician."
+    ],
+    "technologies": ["ui/ux", "Javascript", "JQuery", "PHP"],
+    "position": "top: 30px; right: 35px;",
+    "building": "brickhouse"
+  }
+]

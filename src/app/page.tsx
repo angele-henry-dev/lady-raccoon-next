@@ -1,6 +1,7 @@
 import BackgroundStars from "@/components/animations/BackgroundStars";
 import BackgroundRetro from "@/components/animations/BackgroundRetro";
 import SkillsGrid from "@/components/SkillsGrid";
+import ProExp from "@/components/ProExp";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
         <h2>
         Professional experience
         </h2>
+        <ProExp />
       </div>
 
       <div id="projects" className='w-screen p-10'>

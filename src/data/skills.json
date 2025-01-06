@@ -6,6 +6,7 @@
     { "title": "Ionic", "tags": ["Frontend", "Framework / Library"] },
     { "title": "Next.js", "tags": ["Frontend", "Framework / Library"] },
     { "title": "CSS", "tags": ["Frontend"] },
+
     { "title": "Python", "tags": ["Language", "Backend"] },
     { "title": "Flask", "tags": ["Backend", "Framework / Library"] },
     { "title": "PySpark", "tags": ["Data", "Backend", "Framework / Library"] },
@@ -13,7 +14,9 @@
     { "title": "Hibernate", "tags": ["Backend", "Framework / Library"] },
     { "title": "C++", "tags": ["Language", "Backend"] },
     { "title": "QT", "tags": ["Backend", "Framework / Library"] },
+
     { "title": "AWS", "tags": ["Data", "Cloud"] },
+    
     { "title": "SQL", "tags": ["Data", "Database"] },
     { "title": "MySQL", "tags": ["Data", "Database"] },
     { "title": "PostgreSQL", "tags": ["Data", "Database"] },
