@@ -31,12 +31,6 @@ export default function RootLayout({
 
         <footer className="py-4 text-center">
           <p className='flex flex-row justify-center mb-2'>
-            <Link href="/legal-notice">Legal notice</Link>
-            <span className="mx-2">&#8226;</span>
-            <Link href="/privacy-policy">Privacy policy</Link>
-            <span className="mx-2">&#8226;</span>
-            <Link href="/sitemap">Sitemap</Link>
-            <span className="mx-2">&#8226;</span>
             <Link
               className="mr-2"
               href="https://github.com/angele-henry-dev"
@@ -53,7 +47,14 @@ export default function RootLayout({
               <LinkedIn />
             </Link>
           </p>
-          <p className='mb-2'>Font &apos;OpenDyslexic&apos; by Abelardo Gonzalez.</p>
+          <p className='mb-2'>
+            <Link href="/legal-notice">Legal notice</Link>
+            <span className="mx-2">&#8226;</span>
+            <Link href="/privacy-policy">Privacy policy</Link>
+            <span className="mx-2">&#8226;</span>
+            <Link href="/sitemap">Sitemap</Link>
+          </p>
+          <p className='mb-2'>Font &apos;OpenDyslexic&apos; by Abelardo Gonzalez</p>
           <p>
             Handcrafted with
             <span className="ml-2 highlight">♥</span>
