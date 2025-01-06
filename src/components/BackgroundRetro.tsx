@@ -17,18 +17,19 @@ export default function BackgroundRetro({ play = false }: BackgroundRetroProps) 
 
   // Check visibility
   useEffect(() => {
+    const element = retroLinesRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => setIsVisible(entry.isIntersecting),
       { threshold: 0.1 }
     );
-
-    if (retroLinesRef.current) {
-      observer.observe(retroLinesRef.current);
+  
+    if (element) {
+      observer.observe(element);
     }
-
+  
     return () => {
-      if (retroLinesRef.current) {
-        observer.unobserve(retroLinesRef.current);
+      if (element) {
+        observer.unobserve(element);
       }
     };
   }, []);
