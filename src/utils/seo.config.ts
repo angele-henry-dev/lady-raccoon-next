@@ -1,9 +1,9 @@
 export const defaultSEO = {
-    title: 'Lady Raccoon - Développeuse senior',
+    title: 'Lady Raccoon - Senior Developer',
     description: 'Développeuse senior et couteau suisse technique : j\'optimise, je résous et j\'assure la livraison',
     openGraph: {
         type: 'website',
-        locale: 'fr_FR',
+        locale: 'en_EN',
         url: 'https://www.ladyraccoon.com',
         site_name: 'Lady Raccoon',
         images: [

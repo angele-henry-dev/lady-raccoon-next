@@ -1,0 +1,82 @@
+[
+    {
+        "title": "JavaScript",
+        "tags": ["language", "frontend"]
+    },
+    {
+        "title": "TypeScript",
+        "tags": ["frontend", "framework/library"]
+    },
+    {
+        "title": "Vue.js",
+        "tags": ["frontend", "framework/library"]
+    },
+    {
+        "title": "React",
+        "tags": ["frontend", "framework/library"]
+    },
+    {
+        "title": "Ionic",
+        "tags": ["frontend", "framework/library"]
+    },
+    {
+        "title": "Next.js",
+        "tags": ["frontend", "framework/library"]
+    },
+    {
+        "title": "CSS",
+        "tags": ["frontend"]
+    },
+    {
+        "title": "Python",
+        "tags": ["language", "backend"]
+    },
+    {
+        "title": "Flask",
+        "tags": ["backend", "framework/library"]
+    },
+    {
+        "title": "PySpark",
+        "tags": ["backend", "framework/library"]
+    },
+    {
+        "title": "Java",
+        "tags": ["language", "backend"]
+    },
+    {
+        "title": "Hibernate",
+        "tags": ["backend", "framework/library"]
+    },
+    {
+        "title": "C++",
+        "tags": ["language", "backend"]
+    },
+    {
+        "title": "QT",
+        "tags": ["backend", "frontend", "framework/library"]
+    },
+    {
+        "title": "AWS",
+        "tags": ["backend", "data", "cloud"]
+    },
+    {
+        "title": "SQL",
+        "tags": ["data", "database"]
+    },
+    {
+        "title": "MySQL",
+        "tags": ["data", "database"]
+    },
+    {
+        "title": "PostgreSQL",
+        "tags": ["data", "database"]
+    },
+    {
+        "title": "NoSQL",
+        "tags": ["data", "database"]
+    },
+    {
+        "title": "AWS DynamoDB",
+        "tags": ["data", "database"]
+    }
+]

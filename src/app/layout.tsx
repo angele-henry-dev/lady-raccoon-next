@@ -1,8 +1,8 @@
 import './globals.css';
 import Link from "next/link";
 import Image from 'next/image';
-import Github from '@/components/Github';
-import LinkedIn from '@/components/LinkedIn';
+import Github from '@/components/svg/Github';
+import LinkedIn from '@/components/svg/LinkedIn';
 
 export default function RootLayout({
   children,
@@ -10,7 +10,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr">
+    <html lang="en">
       <body className="min-h-screen flex flex-col">
 
         <header className="p-4">

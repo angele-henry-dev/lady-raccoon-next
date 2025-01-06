@@ -1,11 +1,11 @@
-import BackgroundStars from "@/components/BackgroundStars";
-import BackgroundRetro from "@/components/BackgroundRetro";
+import BackgroundStars from "@/components/animations/BackgroundStars";
+import BackgroundRetro from "@/components/animations/BackgroundRetro";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center text-center">
+    <section className="flex flex-col items-center">
       <BackgroundStars />
-      <div id="description" className='my-20'>
+      <div id="description" className='text-center my-20'>
         <h1>
           Looking for a
           <span className="main-title-container flex flex-row justify-center gap-3 highlight">
@@ -24,6 +24,24 @@ export default function Home() {
       </div>
 
       <BackgroundRetro />
+
+      <div id="skills" className='w-screen p-10'>
+        <h2>
+        🎖 Skills at your service
+        </h2>
+      </div>
+
+      <div id="experience" className='w-screen p-10'>
+        <h2>
+        🗂 Professional experience
+        </h2>
+      </div>
+
+      <div id="projects" className='w-screen p-10'>
+        <h2>
+        🎲 Projects
+        </h2>
+      </div>
     </section>
   );
 }
