@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import skillsData from "@/data/skills.json";
 import styles from "./SkillsGrid.module.css";
+import { Tags } from "@/types/tags";
 
 const SkillsGrid = () => {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
@@ -10,13 +11,23 @@ const SkillsGrid = () => {
   // Filter skills depending on the selected tags
   const filteredSkills = useMemo(() => {
     if (!selectedTag) return skillsData;
-    return skillsData.filter((skill) => skill.tags.includes(selectedTag));
+    return skillsData.filter((skill) => 
+      skill.tags.some((tag: string) => tag === selectedTag)
+    );
   }, [selectedTag]);
 
-  // Extract unique categories for filters
-  const tags = useMemo(() => {
-    const allTags = skillsData.flatMap((skill) => skill.tags);
-    return Array.from(new Set(allTags)); // Unicity of tags
+  // Get tags
+  const tags = Object.values(Tags);
+
+  // Number of skills for each tag
+  const tagCounts = useMemo(() => {
+    const counts: { [key: string]: number } = {};
+    skillsData.forEach((skill) => {
+      skill.tags.forEach((tag: string) => {
+        counts[tag] = (counts[tag] || 0) + 1;
+      });
+    });
+    return counts;
   }, []);
 
   return (
@@ -35,7 +46,7 @@ const SkillsGrid = () => {
             className={`${styles.filterButton} ${selectedTag === tag ? styles.active : ""}`}
             onClick={() => setSelectedTag(tag)}
           >
-            {tag}
+            {tag} ({tagCounts[tag] || 0})
           </button>
         ))}
       </div>
@@ -46,7 +57,7 @@ const SkillsGrid = () => {
           <div key={index} className={styles.card}>
             <h3 className={styles.cardTitle}>{skill.title}</h3>
             <div className={styles.tags}>
-              {skill.tags.map((tag, i) => (
+              {skill.tags.map((tag: string, i: number) => (
                 <span key={i} className={styles.tag}>
                   {tag}
                 </span>
