@@ -16,13 +16,11 @@
 }
 
 .newsCard {
-    background: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--vt-c-pink);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .newsCard:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
@@ -37,34 +35,27 @@
 .content {
     padding: 15px;
 }
-
 .subtitle {
     font-size: 1rem;
-    color: #666;
-    margin-top: 5px;
+    color: #aaaaaa;
 }
-
 .date {
     font-size: 0.9rem;
-    color: #999;
-    margin: 10px 0;
+    color: #aaaaaa;
+    margin-bottom: 10px;
 }
-
 .description {
     font-size: 1rem;
     margin-bottom: 10px;
 }
-
 .technologies {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
-
 .tech {
     padding: 5px 10px;
-    background: #007bff;
-    color: #fff;
     border-radius: 4px;
     font-size: 0.8rem;
+    border: 1px solid var(--vt-c-lime);
 }

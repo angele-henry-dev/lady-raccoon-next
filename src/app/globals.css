@@ -12,7 +12,7 @@
   --vt-c-yellow: #ffff00;
   --vt-c-orange: #ff7c17;
 
-  --color-border: rgba(84, 84, 84, 0.48);
+  --color-border: rgba(84, 84, 84, 1);
 }
 
 @font-face {
@@ -52,13 +52,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+footer {
+  border-top: 1px solid var(--color-border);
+}
+
 header {
   width: 100%;
   display: flex;
   place-items: center;
   position: sticky;
   top: 0px;
-  border: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   background-color: hsla(0, 0%, 9%, 0.9);
   z-index: 100;
 }
@@ -102,6 +106,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Animation main title */
+
+.main-title {
+  font-size: 3rem;
+}
 
 .main-title-container {
   height: 1em;
