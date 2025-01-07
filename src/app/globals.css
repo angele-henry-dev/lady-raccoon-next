@@ -82,6 +82,11 @@ h1 {
   text-align: left;
   margin-bottom: 40px;
 }
+h2 {
+  font-size: 1.5em;
+  text-align: left;
+  margin: 20px 0;
+}
 
 a {
   text-decoration: none;
@@ -95,6 +100,15 @@ a:not(.button):hover {
 
 .highlight {
   color: var(--vt-c-yellow);
+}
+
+.highlightList {
+  list-style: square;
+  margin: 10px 40px;
+  padding: 0;
+}
+.highlightList li::marker {
+  color: var(--vt-c-pink);
 }
 
 .button {

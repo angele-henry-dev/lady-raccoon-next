@@ -44,7 +44,7 @@ export default function Home() {
 }
 
 export const metadata = {
-  title: "Lady Raccoon - Développeuse fullstack senior",
-  description: "Portfolio de Angele Henry sur le développement Frontend, JAMstack et accessibilité.",
+  title: "Lady Raccoon - Senior fullstack developper",
+  description: "Looking for a senior developer to boost your project?",
 };
 

@@ -1,5 +1,6 @@
 'use client';
 
+import './sitemap.css';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
@@ -65,9 +66,9 @@ export default function SitemapPage() {
   }
 
   return (
-    <main className="inBetween">
-      <h1 className="mb-12 text-3xl font-bold text-center">Sitemap</h1>
-      <div id="sitemap-container">
+    <section className="w-5/6 flex flex-col my-5 mx-auto">
+      <h1>Sitemap</h1>
+      <div>
         <ul>
           {urlsSitemap.map((item, i) => (
             <li key={i}>
@@ -100,6 +101,6 @@ export default function SitemapPage() {
           ))}
         </ul>
       </div>
-    </main>
+    </section>
   );
 }

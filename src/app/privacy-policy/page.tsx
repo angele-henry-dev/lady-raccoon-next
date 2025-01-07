@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <section className="flex flex-col items-center text-center">
+    <section className="w-5/6 flex flex-col my-5 mx-auto">
       <h1>Privacy policy</h1>
         <p>
         Welcome to Lady Raccoon’s trust zone! Here, your data’s privacy is protected as securely as
@@ -15,7 +15,7 @@ export default function Home() {
             <p>
                 But don’t worry, we’re not here to steal your health points! Here’s what might be collected:
             </p>
-            <ul>
+            <ul className="highlightList">
                 <li>Name and surname (if you fill out a contact form)</li>
                 <li>Email address (so I can respond to you and not to spam you)</li>
                 <li>Browsing data (via cookies, just to optimize your user experience)</li>
@@ -28,7 +28,7 @@ export default function Home() {
                 in an RPG.
             </p>
             <p>I only use it to:</p>
-            <ul>
+            <ul className="highlightList">
                 <li>Respond to your inquiries if you contact me 📧</li>
                 <li>Improve the website and its performance (thank you, cookies!) 🍪</li>
             </ul>
@@ -51,7 +51,7 @@ export default function Home() {
         <div>
             <h2>Your Rights</h2>
             <p>You have control over your data! It’s your ultimate power. You can:</p>
-            <ul>
+            <ul className="highlightList">
                 <li>
                 Request access to your data (to see what info I have on you, but I promise, nothing
                 incriminating)
