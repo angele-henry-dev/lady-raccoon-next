@@ -81,3 +81,7 @@ export default function Home() {
   );
 }
 
+export const metadata = {
+  title: "Lady Raccoon - Privacy policy",
+  description: "Looking for a senior developer to boost your project?",
+};

@@ -68,8 +68,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-export const metadata = {
-  title: "Lady Raccoon - Senior fullstack developper",
-  description: "Looking for a senior developer to boost your project?",
-};
