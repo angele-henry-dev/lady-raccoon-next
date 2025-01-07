@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import './sitemap.css';
 import Link from 'next/link';
