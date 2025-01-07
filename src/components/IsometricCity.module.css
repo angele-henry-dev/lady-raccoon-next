@@ -13,7 +13,7 @@
     --parking: hsl(0, 0%, 100%);
   
     --water: var(--vt-c-cyan);
-    --water-drop: var(--vt-c-white);
+    --water-drop: var(--foreground);
     --tree: var(--vt-c-lime);
     --building-1: hsl(283, 34%, 32%);
     --building-1-dark: hsl(283, 34%, 12%);
@@ -204,7 +204,7 @@
   .waterDrops div {
     background-color: var(--water-drop);
   }
-  .water div.one {
+  .water div {
     box-shadow: 0 0 8px 3px hsl(186, 100%, 88%);
   }
   .tree div {
@@ -214,17 +214,17 @@
   .tree div:before {
     background: var(--tree-trunc);
   }
-  .car div.one {
+  .car div.car1 {
     background-color: var(--car-1);
     box-shadow: 0 0 18px 7px var(--car-1);
   }
-  .car div.one::after {
+  .car div.car1::after {
     box-shadow: 0 0 18px 5px var(--car-1);
   }
-  .car div.two {
+  .car div.car2 {
     background-color: var(--car-2);
   }
-  .car div.two::after {
+  .car div.car2::after {
     box-shadow: 0 0 18px 5px var(--car-2);
   }
   .brickhouse .wallOne,
@@ -368,31 +368,31 @@
     display: block;
     z-index: 2;
   }
-  .grass div.one {
+  .grass div.grass1 {
     width: 70px;
     height: 260px;
     bottom: 0px;
     left: 0px;
   }
-  .grass div.two {
+  .grass div.grass2 {
     width: 325px;
     height: 55px;
     top: 0px;
     left: 0px;
   }
-  .grass div.three {
+  .grass div.grass3 {
     width: 27px;
     height: 260px;
     bottom: 0px;
     left: 115px;
   }
-  .grass div.four {
+  .grass div.grass4 {
     width: 220px;
     height: 70px;
     bottom: 0px;
     right: 0px;
   }
-  .grass div.five {
+  .grass div.grass5 {
     width: 140px;
     height: 180px;
     bottom: 115px;
@@ -415,15 +415,15 @@
     margin-top: 20px;
     margin-left: 3px;
   }
-  .parking div.one {
+  .parking div.parking1 {
     bottom: 200px;
     right: 38px;
   }
-  .parking div.two {
+  .parking div.parking2 {
     bottom: 215px;
     right: 38px;
   }
-  .parking div.three {
+  .parking div.parking3 {
     bottom: 230px;
     right: 38px;
   }
@@ -501,28 +501,28 @@
     width: 25px;
     z-index: 5;
   }
-  .road div.one {
+  .road div.road1 {
     height: 280px;
     bottom: 0;
     left: 80px;
   }
-  .road div.two {
+  .road div.road2 {
     height: 200px;
     top: 80px;
     left: 152px;
   }
-  .road div.three {
+  .road div.road3 {
     height: 280px;
     top: 0;
     right: 0;
   }
-  .road div.four {
+  .road div.road4 {
     transform: rotateZ(90deg);
     height: 177px;
     top: -10px;
     left: 76px;
   }
-  .road div.five {
+  .road div.road5 {
     transform: rotateZ(90deg);
     height: 180px;
     bottom: 2px;
@@ -562,47 +562,47 @@
       transform: skewX(12deg);
     }
   }
-  .tree div.one {
+  .tree div.tree1 {
     top: 10px;
     left: 10px;
   }
-  .tree div.two {
+  .tree div.tree2 {
     top: 10px;
     left: 45px;
   }
-  .tree div.three {
+  .tree div.tree3 {
     bottom: 14px;
     left: 95px;
   }
-  .tree div.four {
+  .tree div.tree4 {
     bottom: 110px;
     left: 10px;
   }
-  .tree div.five {
+  .tree div.tree5 {
     bottom: 150px;
     left: 10px;
   }
-  .tree div.six {
+  .tree div.tree6 {
     top: 10px;
     left: 185px;
   }
-  .tree div.seven {
+  .tree div.tree7 {
     bottom: 140px;
     left: 100px;
   }
-  .tree div.eight {
+  .tree div.tree8 {
     bottom: 230px;
     left: 100px;
   }
-  .tree div.nine {
+  .tree div.tree9 {
     bottom: 14px;
     right: 150px;
   }
-  .tree div.ten {
+  .tree div.tree10 {
     bottom: 14px;
     right: 10px;
   }
-  .tree div.eleven {
+  .tree div.tree11 {
     top: 100px;
     right: 75px;
   }
@@ -616,13 +616,13 @@
     height: 7px;
     z-index: 5;
   }
-  .car div.one {
+  .car div.car1 {
     top: 79px;
     left: 0px;
     animation: car-one 9s linear infinite;
     animation-delay: 0.25s;
   }
-  .car div.one::after {
+  .car div.car1::after {
     display: block;
     content: '';
   }
@@ -650,14 +650,14 @@
       box-shadow: 2px -2px 0 0 #333;
     }
   }
-  .car div.two {
+  .car div.car2 {
     top: 0px;
     right: 0px;
     animation: car-two 14s linear infinite;
     animation-delay: 5s;
     visibility: hidden;
   }
-  .car div.two::after {
+  .car div.car2::after {
     display: block;
     content: '';
   }

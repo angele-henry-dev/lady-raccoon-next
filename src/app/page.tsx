@@ -1,7 +1,7 @@
 import BackgroundStars from "@/components/animations/BackgroundStars";
 import BackgroundRetro from "@/components/animations/BackgroundRetro";
 import SkillsGrid from "@/components/SkillsGrid";
-import ProExp from "@/components/ProExp";
+import ProExp from "@/components/IsometricCity";
 
 export default function Home() {
   return (
