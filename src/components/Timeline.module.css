@@ -1,9 +1,10 @@
 .timelineContainer {
-    max-width: 800px;
+    padding: 2rem;
 }
 
 .timeline {
     position: relative;
+    max-width: 800px;
 }
 .timeline::before {
     content: '';

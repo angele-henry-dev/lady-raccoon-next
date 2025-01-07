@@ -31,8 +31,9 @@ const Timeline = () => {
   }, []);
   
     return (
-      <div className={`${styles.timelineContainer} w-screen my-0 mx-auto p-5`}>
-        <div className={`${styles.timeline} px-0 py-5`}>
+      <div className={`${styles.timelineContainer}`}>
+        <h1>Professional experience</h1>
+        <div className={`${styles.timeline} my-0 mx-auto px-0 py-5`}>
           {experience.map((item, index) => (
             <div
               key={index}

@@ -32,6 +32,7 @@ const SkillsGrid = () => {
 
   return (
     <div className={styles.container}>
+      <h1>Skills at your service</h1>
       {/* Filters */}
       <div className={styles.filters}>
         <button

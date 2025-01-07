@@ -2,13 +2,14 @@ import BackgroundStars from "@/components/animations/BackgroundStars";
 import BackgroundRetro from "@/components/animations/BackgroundRetro";
 import SkillsGrid from "@/components/SkillsGrid";
 import Timeline from "@/components/Timeline";
+import News from "@/components/News";
 
 export default function Home() {
   return (
     <section className="flex flex-col items-center">
       <BackgroundStars />
       <div id="description" className='text-center my-20'>
-        <h1>
+        <h1 className="text-center">
           Looking for a
           <span className="main-title-container flex flex-row justify-center gap-3 highlight">
             <span className="main-title-container__">
@@ -28,23 +29,15 @@ export default function Home() {
       <BackgroundRetro />
 
       <div id="skills" className='w-screen p-10'>
-        <h2>
-        Skills at your service
-        </h2>
         <SkillsGrid />
       </div>
 
       <div id="experience" className='w-screen p-10'>
-        <h2>
-        Professional experience
-        </h2>
         <Timeline />
       </div>
 
       <div id="projects" className='w-screen p-10'>
-        <h2>
-        Projects
-        </h2>
+        <News />
       </div>
     </section>
   );

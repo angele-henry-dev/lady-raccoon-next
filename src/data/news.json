@@ -1,0 +1,37 @@
+[
+  {
+    "src": "dnd.webp",
+    "title": "DnD Application",
+    "when": "In progress",
+    "type": "application",
+    "subtitle": "Application for iOS and Android",
+    "technologies": ["Ionic Framework", "Vue.js"],
+    "description": "This app is the perfect companion for managing your D&D sessions. It allows players to easily track their character sheets, while providing powerful tools for game masters. "
+  },
+  {
+    "src": "balloon.webp",
+    "title": "I Balloons",
+    "when": "In progress",
+    "type": "game",
+    "subtitle": "Video game for iOS and Android",
+    "technologies": ["Unity3D", "C#"],
+    "description": "Tap on multiple colorful balloons to pop them all! The game will test your reflexes and your patience. It features colorful and friendly visuals and progressive levels."
+  },
+  {
+    "src": "raqyx.webp",
+    "title": "Raqyx",
+    "when": "In progress",
+    "type": "game",
+    "subtitle": "Video game for iOS and Android",
+    "technologies": ["Unity3D", "C#"],
+    "description": "You navigate a dynamic space, strategically creating territories while avoiding ennemies. The game features immersive visuals and an engaging 8-bit soundtrack."
+  },
+  {
+    "src": "womeninit.webp",
+    "title": "Women in IT",
+    "when": "2024 June, Airbus Toulouse",
+    "type": "talk",
+    "subtitle": "",
+    "description": "Explore the historical contributions of women in computing, examine the challenges posed by gender stereotypes and the ongoing efforts to promote greater inclusion in the tech field."
+  }
+]

@@ -63,15 +63,13 @@ header {
   z-index: 100;
 }
 
-header, h2 {
+header, h1 {
   font-family: 'OpenDyslexic', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
-
 h1 {
-  font-size: 3rem;
-}
-h2 {
   font-size: 2rem;
+  text-align: left;
+  margin-bottom: 40px;
 }
 
 a {
