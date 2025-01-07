@@ -16,6 +16,9 @@
   --color-border-card: var(--color-border);
   --color-border-pin: var(--vt-c-cyan);
   --color-button: var(--vt-c-pink);
+
+  --scroll-color-start: var(--vt-c-yellow);
+  --scroll-color-end: var(--vt-c-yellow);
 }
 
 @font-face {
@@ -102,10 +105,10 @@ body::-moz-scrollbar {
   width: 5px;
 }
 body::-webkit-scrollbar-track {
-  background: var(--vt-c-black);
+  background: #303030;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: var(--vt-c-yellow);
+  background: linear-gradient(var(--scroll-color-start), var(--scroll-color-end));
 }
 
 /* Animation main title */

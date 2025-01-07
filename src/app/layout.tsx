@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from 'next/image';
 import Github from '@/components/svg/Github';
 import LinkedIn from '@/components/svg/LinkedIn';
+import ScrollbarGradient from '@/components/animations/ScrollbarGradient';
 
 export default function RootLayout({
   children,
@@ -12,6 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
+        <ScrollbarGradient />
 
         <header className="p-4">
           <nav className="container flex justify-between">
