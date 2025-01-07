@@ -1,14 +1,8 @@
-"use client";
-
-import React, { useRef } from 'react';
+import React from 'react';
 import experience from '@/data/experience.json';
 import styles from "./IsometricCity.module.css";
 
 const IsometricCity = () => {
-  const isoDescriptionContainer = useRef<HTMLUListElement>(null);
-  const ground = useRef<HTMLDivElement>(null);
-  const buildings = useRef<(HTMLDivElement | null)[]>([]);
-
   const parseStyle = (styleString: string): React.CSSProperties => {
     return styleString.split(';').reduce((acc: Record<string, string>, style) => {
       const [key, value] = style.split(':').map(s => s.trim());
@@ -23,7 +17,7 @@ const IsometricCity = () => {
   return (
     <div className={`${styles.isometricCity} flex flex-row justify-center`}>
       <div className={styles.isoContainer} aria-hidden="true">
-        <div ref={ground} className={`${styles.ground} ${styles.night}`}>
+        <div className={`${styles.ground} ${styles.night}`}>
           <div className={styles.shadowRight}></div>
           <div className={styles.shadowLeft}></div>
           <div className={styles.grass}>
@@ -60,9 +54,7 @@ const IsometricCity = () => {
               <div key={`tree_${i}`} className={styles[`tree${i + 1}`]}></div>
             ))}
           </div>
-          <div ref={(el) => {
-            if (el) buildings.current.push(el);
-          }}>
+          <div>
             {experience.map((item, i) => (
               <div
                 key={`building_${i}`}

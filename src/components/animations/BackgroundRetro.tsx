@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useRef, useState, useEffect, useMemo } from 'react';
 import { useWindowSize, useWindowScroll, useMouse } from 'react-use';
