@@ -1,20 +1,20 @@
 .sitemap > li > ul {
     margin-top: 1.5rem;
-  }
+}
   
-  ul li {
+.sitemap ul li {
     line-height: 1.5rem;
     vertical-align: top;
     position: relative;
-  }
-  ul ul {
+}
+.sitemap  ul ul {
     margin-left: 1.5rem;
     margin-bottom: 1.5rem;
-  }
-  ul ul li {
+}
+.sitemap ul ul li {
     position: relative;
-  }
-  ul ul li::before {
+}
+.sitemap ul ul li::before {
     content: '';
     display: inline-block;
     width: 3rem;
@@ -22,8 +22,8 @@
     border-left: 1px #ccc solid;
     position: absolute;
     top: -0.75rem;
-  }
-  ul ul li::before {
+}
+.sitemap ul ul li::before {
     content: '';
     display: inline-block;
     width: 3rem;
@@ -31,7 +31,7 @@
     border-bottom: 1px #ccc solid;
     position: absolute;
     top: -0.75rem;
-  }
-  ul ul li a {
+}
+.sitemap ul ul li a {
     margin-left: 3.75rem;
-  }
+}

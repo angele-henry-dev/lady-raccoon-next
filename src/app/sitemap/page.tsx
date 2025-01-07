@@ -66,7 +66,7 @@ export default function SitemapPage() {
   }
 
   return (
-    <section className="w-5/6 flex flex-col my-5 mx-auto">
+    <section className="sitemap w-5/6 flex flex-col my-5 mx-auto">
       <h1>Sitemap</h1>
       <div>
         <ul>
