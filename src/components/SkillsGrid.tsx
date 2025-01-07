@@ -36,7 +36,7 @@ const SkillsGrid = () => {
       {/* Filters */}
       <div className={styles.filters}>
         <button
-          className={`${styles.filterButton} ${!selectedTag ? styles.active : ""}`}
+          className={`button ${!selectedTag ? 'active' : ""}`}
           onClick={() => setSelectedTag(null)}
         >
           All
@@ -44,7 +44,7 @@ const SkillsGrid = () => {
         {tags.map((tag) => (
           <button
             key={tag}
-            className={`${styles.filterButton} ${selectedTag === tag ? styles.active : ""}`}
+            className={`button ${selectedTag === tag ? 'active' : ""}`}
             onClick={() => setSelectedTag(tag)}
           >
             {tag} ({tagCounts[tag] || 0})

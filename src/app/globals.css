@@ -88,12 +88,25 @@ a {
   transition: 0.4s;
   vertical-align: middle;
 }
-a:hover {
+a:not(.button):hover {
   color: var(--vt-c-pink);
 }
 
 .highlight {
   color: var(--vt-c-yellow);
+}
+
+.button {
+  padding: 8px 16px;
+  border: 1px solid var(--color-button);
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.button.active,
+.button:hover {
+    background-color: var(--color-button);
 }
 
 /* Custom scrollbar */

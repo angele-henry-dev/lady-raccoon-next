@@ -14,7 +14,7 @@
     "when": "In progress",
     "type": "game",
     "subtitle": "Video game for iOS and Android",
-    "technologies": ["Unity3D", "C#"],
+    "technologies": ["Godot 4", "C#"],
     "description": "Tap on multiple colorful balloons to pop them all! The game will test your reflexes and your patience. It features colorful and friendly visuals and progressive levels."
   },
   {
@@ -25,13 +25,5 @@
     "subtitle": "Video game for iOS and Android",
     "technologies": ["Unity3D", "C#"],
     "description": "You navigate a dynamic space, strategically creating territories while avoiding ennemies. The game features immersive visuals and an engaging 8-bit soundtrack."
-  },
-  {
-    "src": "womeninit.webp",
-    "title": "Women in IT",
-    "when": "2024 June, Airbus Toulouse",
-    "type": "talk",
-    "subtitle": "",
-    "description": "Explore the historical contributions of women in computing, examine the challenges posed by gender stereotypes and the ongoing efforts to promote greater inclusion in the tech field."
   }
 ]

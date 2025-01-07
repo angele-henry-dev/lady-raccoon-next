@@ -14,12 +14,12 @@ const News = () => {
               <h2 className={styles.title}>{item.title}</h2>
               <h3 className={styles.subtitle}>{item.subtitle}</h3>
               <p className={styles.date}>{item.when}</p>
-              <p className={styles.description}>{item.description}</p>
-              <div className={styles.technologies}>
+              <div className={`${styles.technologies} mb-5`}>
                 {item.technologies?.map((tech, i) => (
                   <span key={i} className={styles.tech}>{tech}</span>
                 ))}
               </div>
+              <p className={styles.description}>{item.description}</p>
             </div>
           </div>
         ))}

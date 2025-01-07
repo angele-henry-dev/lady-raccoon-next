@@ -1,4 +1,4 @@
-.isometricCity {
+.isoContainer {
     --ground--night: hsl(0, 0%, 21%);
     --ground-dark--night: hsl(0, 0%, 5%);
     --road--night: hsl(0, 0%, 26%);
@@ -35,6 +35,7 @@
   
   .isoContainer {
     width: 560px;
+    height: 560px;
   }
   .ground {
     width: 360px;

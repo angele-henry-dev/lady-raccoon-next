@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center">
       <BackgroundStars />
-      <div id="description" className='text-center my-20'>
+      <div className='text-center my-20'>
         <h1 className="text-center main-title">
           Looking for a
           <span className="main-title-container flex flex-row justify-center gap-3 highlight">
@@ -28,16 +28,16 @@ export default function Home() {
 
       <BackgroundRetro />
 
-      <div id="skills" className='w-screen p-10'>
+      <div className='w-screen p-10'>
+        <News />
+      </div>
+
+      <div className='w-screen p-10'>
         <SkillsGrid />
       </div>
 
-      <div id="experience" className='w-screen p-10'>
+      <div className='w-screen p-10'>
         <Timeline />
-      </div>
-
-      <div id="projects" className='w-screen p-10'>
-        <News />
       </div>
     </section>
   );
