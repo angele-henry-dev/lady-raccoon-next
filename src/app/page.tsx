@@ -28,15 +28,15 @@ export default function Home() {
 
       <BackgroundRetro />
 
-      <div className='w-screen p-10'>
+      <div className='w-screen'>
         <News />
       </div>
 
-      <div className='w-screen p-10'>
+      <div className='w-screen'>
         <SkillsGrid />
       </div>
 
-      <div className='w-screen p-10'>
+      <div className='w-screen'>
         <Timeline />
       </div>
     </section>

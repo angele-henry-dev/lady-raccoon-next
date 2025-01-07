@@ -165,3 +165,22 @@ body::-webkit-scrollbar-thumb {
     transform: translate3d(0, -83%, 0);
   }
 }
+
+/* Responsiveness */
+
+@media (max-width: 900px) {
+  body {
+    font-size: 12pt;
+  }
+  .main-title {
+    font-size: 2em;
+  }
+}
+@media (max-width: 430px) {
+  body {
+    font-size: 12pt;
+  }
+  h1, .main-title {
+    font-size: 1.5em;
+  }
+}

@@ -90,3 +90,27 @@
     border-radius: 4px;
     font-size: 0.9em;
 }
+
+@media (max-width: 700px) {
+    .timeline::before {
+        left: 0;
+    }
+    .timelineItem {
+        width: 100%;
+    }
+    .timelineItem.left {
+        left: 0;
+        padding-left: 30px;
+        padding-right: 0;
+        text-align: left;
+    }
+    .timelineItem.right {
+        left: 0;
+        padding-left: 30px;
+        padding-right: 0;
+        text-align: left;
+    }
+    .timelineItem.left .timelineDot {
+        left: -7.5px;
+    }
+}
