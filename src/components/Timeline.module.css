@@ -4,7 +4,6 @@
 
 .timeline {
     position: relative;
-    max-width: 800px;
 }
 .timeline::before {
     content: '';

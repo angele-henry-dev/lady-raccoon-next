@@ -28,15 +28,15 @@ export default function Home() {
 
       <BackgroundRetro />
 
-      <div className='w-screen'>
+      <div className='w-screen max-w-[1300px]'>
         <News />
       </div>
 
-      <div className='w-screen'>
+      <div className='w-screen max-w-[1300px]'>
         <SkillsGrid />
       </div>
 
-      <div className='w-screen'>
+      <div className='w-screen max-w-[1300px]'>
         <Timeline />
       </div>
     </section>
