@@ -72,3 +72,7 @@ export default function Home() {
   );
 }
 
+export const metadata = {
+  title: "Lady Raccoon - Legal notice",
+  description: "Looking for a senior developer to boost your project?",
+};

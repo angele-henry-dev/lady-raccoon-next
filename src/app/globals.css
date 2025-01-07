@@ -59,7 +59,7 @@ header {
   z-index: 100;
 }
 
-header, h1 {
+header, h1, .main-title {
   font-family: 'OpenDyslexic', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 h1 {

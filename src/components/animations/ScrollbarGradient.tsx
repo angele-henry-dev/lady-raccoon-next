@@ -15,8 +15,13 @@ const ScrollbarGradient = () => {
       const mixColors = (color1: number[], color2: number[], ratio: number) =>
         color1.map((c, i) => Math.round(c * (1 - ratio) + color2[i] * ratio));
 
-      const startColor = mixColors(yellow, pink, scrollFraction);
-      const endColor = mixColors(yellow, pink, scrollFraction);
+      let startColor = mixColors(yellow, pink, scrollFraction);
+      let endColor = mixColors(yellow, pink, scrollFraction);
+
+      if (startColor.includes(NaN) || endColor.includes(NaN)) {
+        startColor = yellow;
+        endColor = yellow;
+      }
 
       document.documentElement.style.setProperty(
         '--scroll-color-start',
