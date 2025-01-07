@@ -49,6 +49,12 @@
     tail 30s ease-in-out infinite,
     shooting 30s ease-in-out infinite;
 }
+@media (prefers-reduced-motion: reduce) {
+  .shootingStar {
+    display: none;
+    animation: none;
+  }
+}
 @keyframes shooting {
   0% {
     transform: translateX(-20px) translateY(-200px) rotate(var(--rotation));
