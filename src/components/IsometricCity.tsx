@@ -37,31 +37,9 @@ const IsometricCity = () => {
             />
           ))}
           {experience.map((item, i) => (
-            <div key={`controls_${i}`} className={styles.carouselControls}>
-              <label
-                className={`${styles.carouselControl} ${styles.carouselControlBackward}`}
-                htmlFor={
-                  i === 0
-                    ? `iso_${experience.length - 1}`
-                    : `iso_${i - 1}`
-                }
-              >
-                &#10148;
-              </label>
-              <label
-                className={`${styles.carouselControl} ${styles.carouselControlForward}`}
-                htmlFor={
-                  i === experience.length - 1 ? 'iso_0' : `iso_${i + 1}`
-                }
-              >
-                &#10148;
-              </label>
-            </div>
-          ))}
-          {experience.map((item, i) => (
             <li key={`item_${i}`}>
               <div className={styles.card}>
-                <h2>{item.what}</h2>
+                <h3>{item.what}</h3>
                 <p>
                   {item.from}
                   {item.to && ` - ${item.to}`}, {item.where}
@@ -79,20 +57,9 @@ const IsometricCity = () => {
               </div>
             </li>
           ))}
-          <div className={styles.carouselIndicators}>
-            {experience.map((item, i) => (
-              <label
-                key={`indicator_${i}`}
-                className={styles.carouselIndicator}
-                htmlFor={`iso_${i}`}
-              >
-                &#9679;
-              </label>
-            ))}
-          </div>
         </ul>
       </div>
-      <div className={styles.isoContainer}>
+      <div className={styles.isoContainer} aria-hidden="true">
         <div ref={ground} className={`${styles.ground} ${styles.night}`}>
           <div className={styles.shadowRight}></div>
           <div className={styles.shadowLeft}></div>

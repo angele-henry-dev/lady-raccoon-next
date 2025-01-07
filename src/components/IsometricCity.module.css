@@ -76,10 +76,9 @@
     opacity: 0;
     overflow: hidden;
   }
-  .isoDescription ul li .card {
+  .isoDescription .card {
     height: 100%;
   }
-  .carousel__controls,
   .carouselActivator {
     display: none;
   }
@@ -100,77 +99,31 @@
     transform: scale(1);
     z-index: 5;
   }
-  .carouselActivator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1),
-  .carouselActivator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2),
-  .carouselActivator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3),
-  .carouselActivator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4),
-  .carouselActivator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5),
-  .carouselActivator:nth-of-type(6):checked ~ .carousel__controls:nth-of-type(6),
-  .carouselActivator:nth-of-type(7):checked ~ .carousel__controls:nth-of-type(7) {
-    display: block;
+
+  .card {
+    padding: 10px 20px;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    background-color: var(--vt-c-black-soft);
+    box-shadow: -1rem 0 3rem #000;
+    border: 1px solid var(--color-border);
+    border-radius: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
   }
-  .carouselActivator:nth-of-type(1):checked
-    ~ .carouselIndicators
-    .carouselIndicators:nth-of-type(1),
-  .carouselActivator:nth-of-type(2):checked
-    ~ .carouselIndicators
-    .carouselIndicators:nth-of-type(2),
-  .carouselActivator:nth-of-type(3):checked
-    ~ .carouselIndicators
-    .carouselIndicators:nth-of-type(3),
-  .carouselActivator:nth-of-type(4):checked
-    ~ .carouselIndicators
-    .carouselIndicators:nth-of-type(4),
-  .carouselActivator:nth-of-type(5):checked
-    ~ .carouselIndicators
-    .carouselIndicators:nth-of-type(5),
-  .carouselActivator:nth-of-type(6):checked
-    ~ .carouselIndicators
-    .carouselIndicators:nth-of-type(6),
-  .carouselActivator:nth-of-type(7):checked
-    ~ .carouselIndicators
-    .carouselIndicators:nth-of-type(7) {
-    color: #fafafa;
+
+  .pins {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
   }
-  
-  .carouselControl {
-    position: absolute;
-    bottom: 0;
-    display: block;
-    font-size: 3rem;
-    color: #787878;
-    cursor: pointer;
-    z-index: 3;
-  }
-  .carouselControl:hover {
-    color: #fff;
-  }
-  .carouselControlBackward {
-    left: 10px;
-    transform: rotate(-180deg);
-  }
-  .carouselControlForward {
-    right: 10px;
-  }
-  
-  .carouselIndicators {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-  }
-  .carouselIndicators {
-    font-size: 20px;
-    display: inline-block;
-    z-index: 2;
-    cursor: pointer;
-    margin: 0 2.5px 0 2.5px;
-  }
-  .carouselIndicators:hover {
-    color: #fafafa;
-  }
-  .carouselIndicators {
-    color: #787878;
+  .pins span {
+    border: 1px solid var(--vt-c-pink);
+    border-radius: 15px;
+    padding: 2px 10px;
   }
   
   /* Colors */
