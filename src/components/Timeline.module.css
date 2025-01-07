@@ -13,7 +13,7 @@
     bottom: 0;
     left: 50%;
     width: 2px;
-    background: var(--vt-c-orange);
+    background: var(--color-border-card);
 }
 
 .timelineItem {
@@ -43,10 +43,10 @@
     top: 10px;
     width: 15px;
     height: 15px;
-    background: var(--vt-c-cyan);
+    background: var(--color-border-pin);
     border-radius: 50%;
     border: 3px solid var(--background);
-    box-shadow: 0 0 0 2px var(--vt-c-cyan);
+    box-shadow: 0 0 0 2px var(--color-border-pin);
 }
 .timelineItem.left .timelineDot {
     right: -7.5px;
@@ -58,7 +58,7 @@
 .timelineContent {
     padding: 15px;
     border-radius: 8px;
-    border: 1px solid var(--vt-c-orange);
+    border: 1px solid var(--color-border-card);
 }
 .what {
     font-size: 1.2rem;
@@ -85,7 +85,7 @@
     display: inline-block;
     padding: 5px 10px;
     margin: 5px 5px 0 0;
-    border: 1px solid var(--vt-c-cyan);
+    border: 1px solid var(--color-border-pin);
     color: var(--foreground);
     border-radius: 4px;
     font-size: 0.8rem;

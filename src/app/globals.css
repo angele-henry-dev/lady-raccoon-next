@@ -13,6 +13,9 @@
   --vt-c-orange: #ff7c17;
 
   --color-border: rgba(84, 84, 84, 1);
+  --color-border-card: var(--color-border);
+  --color-border-pin: var(--vt-c-cyan);
+  --color-button: var(--vt-c-pink);
 }
 
 @font-face {
@@ -87,7 +90,7 @@ a:hover {
 }
 
 .highlight {
-  color: var(--vt-c-pink);
+  color: var(--vt-c-yellow);
 }
 
 /* Custom scrollbar */
@@ -102,7 +105,7 @@ body::-webkit-scrollbar-track {
   background: var(--vt-c-black);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: var(--vt-c-pink);
+  background-color: var(--vt-c-yellow);
 }
 
 /* Animation main title */
