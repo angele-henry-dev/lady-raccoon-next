@@ -48,7 +48,7 @@ export default function BackgroundRetro({ play = false }: BackgroundRetroProps) 
   }, [play, isVisible, mouseX, width]);
 
   return (
-    <div className={styles.retro} aria-hidden="true">
+    <div className={`${styles.retro}`} aria-hidden="true">
       <div className={styles.retroSky}>
         <div className={styles.retroSunWrap}>
           <div className={styles.retroSunShadow}></div>
