@@ -1,0 +1,91 @@
+.timelineContainer {
+    max-width: 800px;
+}
+
+.timeline {
+    position: relative;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: var(--vt-c-orange);
+}
+
+.timelineItem {
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
+}
+.timelineItem.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.timelineItem.left {
+    left: 0;
+    padding-right: 30px;
+    text-align: right;
+}
+.timelineItem.right {
+    left: 50%;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.timelineDot {
+    position: absolute;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background: var(--vt-c-cyan);
+    border-radius: 50%;
+    border: 3px solid var(--background);
+    box-shadow: 0 0 0 2px var(--vt-c-cyan);
+}
+.timelineItem.left .timelineDot {
+    right: -7.5px;
+}
+.timelineItem.right .timelineDot {
+    left: -7.5px;
+}
+
+.timelineContent {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--vt-c-orange);
+}
+.what {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.where {
+    font-size: 1rem;
+    color: #aaaaaa;
+}
+.date {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}
+.descriptions {
+    margin-top: 10px;
+}
+.descriptions li {
+    margin-bottom: 5px;
+}
+.technologies {
+    margin-top: 10px;
+}
+.tech {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 5px 0 0;
+    border: 1px solid var(--vt-c-cyan);
+    color: var(--foreground);
+    border-radius: 4px;
+    font-size: 0.8rem;
+}

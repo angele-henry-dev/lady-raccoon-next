@@ -61,8 +61,7 @@
 
 .tag {
     font-size: 0.75rem;
-    background: var(--vt-c-lime);
-    color: #000;
+    border: 1px solid var(--vt-c-lime);
     padding: 2px 8px;
     border-radius: 12px;
 }
