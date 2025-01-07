@@ -1,11 +1,10 @@
 "use client";
 
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import experience from '@/data/experience.json';
 import styles from "./IsometricCity.module.css";
 
 const IsometricCity = () => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
   const isoDescriptionContainer = useRef<HTMLUListElement>(null);
   const ground = useRef<HTMLDivElement>(null);
   const buildings = useRef<(HTMLDivElement | null)[]>([]);
@@ -19,46 +18,10 @@ const IsometricCity = () => {
       }
       return acc;
     }, {});
-  };  
+  };
 
   return (
-    <div className={styles.isometricCity}>
-      <div className={`${styles.isoDescription} ${styles.grow}`}>
-        <ul ref={isoDescriptionContainer}>
-          {experience.map((item, i) => (
-            <input
-              key={`iso_${i}`}
-              type="radio"
-              id={`iso_${i}`}
-              className={styles.carouselActivator}
-              name="activator"
-              checked={selectedIndex === i}
-              onChange={() => setSelectedIndex(i)}
-            />
-          ))}
-          {experience.map((item, i) => (
-            <li key={`item_${i}`}>
-              <div className={styles.card}>
-                <h3>{item.what}</h3>
-                <p>
-                  {item.from}
-                  {item.to && ` - ${item.to}`}, {item.where}
-                </p>
-                <div className={styles.pins}>
-                  {item.technologies.map((techno, j) => (
-                    <span key={`tech_${j}`}>{techno}</span>
-                  ))}
-                </div>
-                <div>
-                  {item.descriptions.map((description, j) => (
-                    <p key={`desc_${j}`}>{description}</p>
-                  ))}
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div className={`${styles.isometricCity} flex flex-row justify-center`}>
       <div className={styles.isoContainer} aria-hidden="true">
         <div ref={ground} className={`${styles.ground} ${styles.night}`}>
           <div className={styles.shadowRight}></div>
@@ -112,13 +75,7 @@ const IsometricCity = () => {
                 <div className={styles.wallTwo}>
                   <div></div>
                 </div>
-                <div
-                  ref={(el) => {
-                    if (el) buildings.current[i] = el;
-                  }}
-                  className={`${styles.roof} ${selectedIndex === i ? styles.selected : ''}`}
-                  onClick={() => setSelectedIndex(i)}
-                ></div>
+                <div className={styles.roof}></div>
               </div>
             ))}
           </div>
