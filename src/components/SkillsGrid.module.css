@@ -73,8 +73,7 @@
 
 @media (max-width: 560px) {
     .card {
-        padding: 1em;
         width: 110px;
-        height: 110px;
+        height: 80px;
     }
 }
