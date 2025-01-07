@@ -15,7 +15,9 @@
   --color-border: rgba(84, 84, 84, 1);
   --color-border-card: var(--color-border);
   --color-border-pin: var(--vt-c-cyan);
+
   --color-button: var(--vt-c-pink);
+  --color-button-background: var(--foreground);
 
   --scroll-color-start: var(--vt-c-yellow);
   --scroll-color-end: var(--vt-c-yellow);
@@ -93,6 +95,7 @@ a {
   color: var(--foreground);
   transition: 0.4s;
   vertical-align: middle;
+  font-size: 16pt;
 }
 a:not(.button):hover {
   color: var(--vt-c-pink);
@@ -121,7 +124,7 @@ a:not(.button):hover {
 }
 .button.active,
 .button:hover {
-    background-color: var(--color-button);
+  border: 1px solid var(--vt-c-yellow);
 }
 
 /* Custom scrollbar */

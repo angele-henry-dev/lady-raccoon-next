@@ -56,7 +56,7 @@ const SkillsGrid = () => {
       <div className={styles.grid}>
         {filteredSkills.map((skill, index) => (
           <div key={index} className={styles.card}>
-            <h3 className={styles.cardTitle}>{skill.title}</h3>
+            <span className={styles.cardTitle}>{skill.title}</span>
           </div>
         ))}
       </div>
