@@ -11,8 +11,8 @@ export default function Home() {
       <div className='text-center my-20 max-w-[720px]'>
         <h1 className="text-center main-title">
           Looking for a
-          <span className="main-title-container flex flex-row justify-center gap-3 highlight">
-            <span className="main-title-container__">
+          <div className="main-title-container flex flex-row justify-center gap-3 highlight">
+            <div className="main-title-container__">
               <ul className="main-title-container__list">
                 <li className="main-title-container__list__item">senior developer</li>
                 <li className="main-title-container__list__item">lead developer</li>
@@ -20,8 +20,8 @@ export default function Home() {
                 <li className="main-title-container__list__item">frontend developer</li>
                 <li className="main-title-container__list__item">backend developer</li>
               </ul>
-            </span>
-          </span>
+            </div>
+          </div>
           to boost your project?
         </h1>
       </div>
@@ -42,9 +42,4 @@ export default function Home() {
     </section>
   );
 }
-
-export const metadata = {
-  title: "Lady Raccoon - Senior fullstack developper",
-  description: "Looking for a senior developer to boost your project?",
-};
 

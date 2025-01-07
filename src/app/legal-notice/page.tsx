@@ -72,8 +72,3 @@ export default function Home() {
   );
 }
 
-export const metadata = {
-    title: "Lady Raccoon - Senior fullstack developper",
-    description: "Looking for a senior developer to boost your project?",
-};
-

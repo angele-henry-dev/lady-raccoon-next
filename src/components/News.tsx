@@ -10,7 +10,7 @@ const News = () => {
       <div className={styles.newsGrid}>
         {news.map((item, index) => (
           <div key={index} className={styles.newsCard}>
-            <Image src={`/images/${item.src}`} alt={item.title} className={styles.image} />
+            <Image src={`/images/${item.src}`} alt={item.title} width={450} height={450} className={styles.image} />
             <div className={styles.content}>
               <h2 className={styles.title}>{item.title}</h2>
               <h3 className={styles.subtitle}>{item.subtitle}</h3>

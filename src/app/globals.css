@@ -28,6 +28,7 @@
   src: url('/fonts/OpenDyslexic-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
@@ -59,7 +60,6 @@ header {
 }
 
 header, h1 {
-  font-display: swap;
   font-family: 'OpenDyslexic', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 h1 {
@@ -141,6 +141,11 @@ body::-webkit-scrollbar-thumb {
   animation-name: swipe;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .main-title-container__list {
+    animation: none;
+  }
 }
 @keyframes swipe {
   0%,
