@@ -149,7 +149,7 @@ const IsometricCity = () => {
                   ref={(el) => {
                     if (el) buildings.current[i] = el;
                   }}
-                  className={styles[`roof${selectedIndex === i ? 'Selected' : ''}`]}
+                  className={`${styles.roof} ${selectedIndex === i ? styles.selected : ''}`}
                   onClick={() => setSelectedIndex(i)}
                 ></div>
               </div>
