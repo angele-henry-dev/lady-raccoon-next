@@ -61,15 +61,15 @@
     border: 1px solid var(--color-border-card);
 }
 .what {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: bold;
 }
 .where {
-    font-size: 1rem;
+    font-size: 0.8em;
     color: #aaaaaa;
 }
 .date {
-    font-size: 0.9rem;
+    font-size: 0.8em;
     color: #aaaaaa;
 }
 .descriptions {
@@ -83,10 +83,10 @@
 }
 .tech {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 2px 9px;
     margin: 5px 5px 0 0;
     border: 1px solid var(--color-border-pin);
     color: var(--foreground);
     border-radius: 4px;
-    font-size: 0.8rem;
+    font-size: 0.9em;
 }
