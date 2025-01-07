@@ -56,13 +56,6 @@ const SkillsGrid = () => {
         {filteredSkills.map((skill, index) => (
           <div key={index} className={styles.card}>
             <h3 className={styles.cardTitle}>{skill.title}</h3>
-            <div className={styles.tags}>
-              {skill.tags.map((tag: string, i: number) => (
-                <span key={i} className={styles.tag}>
-                  {tag}
-                </span>
-              ))}
-            </div>
           </div>
         ))}
       </div>
