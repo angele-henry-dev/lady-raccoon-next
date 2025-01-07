@@ -45,7 +45,7 @@ export default function BackgroundStars({
   }, [smallCount, mediumCount, largeCount]);
 
   return (
-    <div className={styles.retrobgStars} aria-hidden="true">
+    <div className={`${styles.retrobgStars} max-w-[1920px]`} aria-hidden="true">
       {stars.map((star, i) => (
         <div
           key={i}
