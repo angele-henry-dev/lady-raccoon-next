@@ -8,6 +8,7 @@ const Timeline = () => {
   const itemsRef = useRef<(HTMLDivElement | null)[]>([]);
   
   useEffect(() => {
+    const element = itemsRef.current;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -19,12 +20,12 @@ const Timeline = () => {
       { threshold: 0.1 }
     );
 
-    itemsRef.current.forEach((el) => {
+    element.forEach((el) => {
       if (el) observer.observe(el);
     });
 
     return () => {
-      itemsRef.current.forEach((el) => {
+      element.forEach((el) => {
         if (el) observer.unobserve(el);
       });
     };

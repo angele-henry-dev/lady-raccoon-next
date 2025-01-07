@@ -1,6 +1,7 @@
 import React from 'react';
 import news from '@/data/news.json';
 import styles from './News.module.css';
+import Image from 'next/image';
 
 const News = () => {
   return (
@@ -9,7 +10,7 @@ const News = () => {
       <div className={styles.newsGrid}>
         {news.map((item, index) => (
           <div key={index} className={styles.newsCard}>
-            <img src={`/images/${item.src}`} alt={item.title} className={styles.image} />
+            <Image src={`/images/${item.src}`} alt={item.title} className={styles.image} />
             <div className={styles.content}>
               <h2 className={styles.title}>{item.title}</h2>
               <h3 className={styles.subtitle}>{item.subtitle}</h3>
