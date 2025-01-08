@@ -21,12 +21,10 @@ export default function RootLayout({
               <Image src="/images/logo.webp" alt="Logo of Lady Raccoon" width={50} height={50} />
               <span className="truncate">Lady Raccoon</span>
             </Link>
-            <ul className="hidden lg:flex items-center gap-4">
+            <ul className="hidden md:flex items-center gap-4">
               <li><Link href="/#news">News</Link></li>
               <li><Link href="/#skills">Skills</Link></li>
-              <li><Link href="/#experience">Experience</Link></li>
-            </ul>
-            <ul className="hidden sm:flex items-center gap-4">
+              <li className='mr-5'><Link href="/#experience">Experience</Link></li>
               <li>
                 <Link
                 href="https://github.com/angele-henry-dev"
