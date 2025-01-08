@@ -8,7 +8,8 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center">
       <BackgroundStars />
-      <div className='text-center my-20 max-w-[720px]'>
+
+      <div className='text-center my-20 container mx-auto'>
         <div className="text-center main-title">
           Looking for a
           <div className="main-title-container flex flex-row justify-center gap-3 highlight">
@@ -28,15 +29,15 @@ export default function Home() {
 
       <BackgroundRetro />
 
-      <div className='w-screen max-w-[1300px]'>
+      <div id="news" className='container mx-auto'>
         <News />
       </div>
 
-      <div className='w-screen max-w-[1300px]'>
+      <div id="skills" className='container mx-auto'>
         <SkillsGrid />
       </div>
 
-      <div className='w-screen max-w-[1300px]'>
+      <div id="experience" className='container mx-auto'>
         <Timeline />
       </div>
     </section>
