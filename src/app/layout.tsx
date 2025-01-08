@@ -18,7 +18,7 @@ export default function RootLayout({
         <header className="p-4">
           <nav className="container flex justify-between">
             <Link href="/" className="text-xl flex items-center gap-2">
-              <Image src="/images/logo.webp" alt="Logo" width={50} height={50} />
+              <Image src="/images/logo.webp" alt="Logo of Lady Raccoon" width={50} height={50} />
               <span className="truncate">Lady Raccoon</span>
             </Link>
             {/* <ul className="flex gap-4">
