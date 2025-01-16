@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useMemo } from "react";
 import skillsData from "@/data/skills.json";
 import styles from "./SkillsGrid.module.css";
-import { Tags } from "@/types/tags";
 
 const SkillsGrid = () => {
   const frontendSkills = useMemo(() => {
@@ -25,20 +24,6 @@ const SkillsGrid = () => {
     return skillsData.filter((skill) => 
       skill.tags.some((tag: string) => tag === "Other")
     );
-  }, []);
-
-  // Get tags
-  const tags = Object.values(Tags);
-
-  // Number of skills for each tag
-  const tagCounts = useMemo(() => {
-    const counts: { [key: string]: number } = {};
-    skillsData.forEach((skill) => {
-      skill.tags.forEach((tag: string) => {
-        counts[tag] = (counts[tag] || 0) + 1;
-      });
-    });
-    return counts;
   }, []);
 
   return (
