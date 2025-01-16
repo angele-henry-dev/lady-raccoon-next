@@ -7,17 +7,13 @@
   --foreground: #f8f8f8;
 
   --vt-c-pink: #ed1271;
-  --vt-c-lime: #00ff33;
-  --vt-c-cyan: #00ffff;
   --vt-c-yellow: #ffff00;
-  --vt-c-orange: #ff7c17;
+  --vt-c-cyan: #00ffff;
+/*   --vt-c-lime: #00ff33;
+  --vt-c-orange: #F57D1F; */
 
-  --color-border: rgba(84, 84, 84, 1);
-  --color-border-card: var(--color-border);
-  --color-border-pin: var(--vt-c-cyan);
-
-  --color-button: var(--vt-c-pink);
-  --color-button-background: var(--foreground);
+  --color-border-card: #545454;
+  --color-border-pin: var(--vt-c-pink);
 
   --scroll-color-start: var(--vt-c-yellow);
   --scroll-color-end: var(--vt-c-yellow);
@@ -37,14 +33,14 @@ body {
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
-  font-size: 14pt;
+  font-size: 16pt;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 footer {
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border-card);
   font-size: 0.8em;
 }
 
@@ -54,12 +50,12 @@ header {
   place-items: center;
   position: sticky;
   top: 0px;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border-card);
   background-color: hsla(0, 0%, 9%, 0.9);
   z-index: 100;
 }
 
-header, h1, .main-title {
+header, h1 {
   font-family: 'OpenDyslexic', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 h1 {
@@ -81,7 +77,7 @@ a {
   font-size: 16pt;
 }
 a:not(.button):hover {
-  color: var(--vt-c-pink);
+  color: var(--vt-c-yellow);
 }
 
 .highlight {
@@ -99,7 +95,7 @@ a:not(.button):hover {
 
 .button {
   padding: 8px 16px;
-  border: 1px solid var(--color-button);
+  border: 1px solid var(--vt-c-cyan);
   background-color: transparent;
   cursor: pointer;
   border-radius: 5px;
